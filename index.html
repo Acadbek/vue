@@ -11,13 +11,24 @@
 
 <body>
   <div id="vue-app">
-    <button @click="a++">add a</button>
-    <button @click="b++">add b</button>
-    <p> A- {{a}}, B - {{b}} </p>
-    <p>Age + A = {{addToA}}</p>
-    <p>Age + B = {{addToB}}</p>
+    <!-- <button @click="active = !active">add class</button>
+    <div class="bg" :class="{green: active}">a</div> -->
+    <button @click="">change color</button>
+    <div v-bind:class="compClasses">
+      <span>helllo </span>
+    </div>
   </div>
 </body>
+
+<style>
+  .bg {
+    color: red;
+  }
+
+  .green {
+    color: green
+  }
+</style>
 
 <script src="app.js"></script>
 
