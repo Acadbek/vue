@@ -3,7 +3,7 @@ new Vue({
   data: {
     active: false,
     active2: false,
-    age: 35,
+    age: 37,
   },
   computed: {
     compClasses: function () {
