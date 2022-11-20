@@ -5,15 +5,19 @@
   <meta charset="utf-8">
   <title>VueJS Tutorials</title>
   <link href="styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 
 <body>
   <div id="vue-app">
-    <h1>{{greet('morning')}}</h1>
-    <a v-bind:href="website">see more</a>
-    <input type="text" :placeholder="name">
-    <div v-html="tag"></div>
+    <div>
+      <button @click="add">add a year</button>
+      <h1>my age id {{age}}</h1>
+      <button @click="subtract">subtract a year</button>
+    </div>
+    <canvas @mousemove="updateXY" id="canvas">{{x}}, {{y}}</canvas>
+    <p>X: {{x}}, Y: {{y}}</p>
   </div>
 </body>
 
