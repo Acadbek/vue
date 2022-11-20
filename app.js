@@ -1,12 +1,8 @@
 new Vue({
   el: "#vue-app",
   data: {
-    value: 0,
+    name: "",
+    age: "",
   },
-  methods: {
-    update: function (t) {
-      console.log("entered", t.target.value);
-      t.target.value = "";
-    },
-  },
+  methods: {},
 });

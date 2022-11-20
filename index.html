@@ -11,7 +11,10 @@
 
 <body>
   <div id="vue-app">
-    <input @keyup.enter="update" type="text">
+    <input type="text" v-model="name">
+    <span>{{name}}</span>
+    <input type="number" v-model="age">
+    <span>{{age}}</span>
   </div>
 </body>
 
