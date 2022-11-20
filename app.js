@@ -5,8 +5,8 @@ new Vue({
     job: "Dev",
   },
   methods: {
-    greet: () => {
-      return "Goodbye World";
+    greet: function (str) {
+      return `${str} ${this.name}`;
     },
   },
 });
