@@ -11,10 +11,11 @@
 
 <body>
   <div id="vue-app">
-    <input type="text" v-model="name">
-    <span>{{name}}</span>
-    <input type="number" v-model="age">
-    <span>{{age}}</span>
+    <button @click="a++">add a</button>
+    <button @click="b++">add b</button>
+    <p> A- {{a}}, B - {{b}} </p>
+    <p>Age + A = {{addToA}}</p>
+    <p>Age + B = {{addToB}}</p>
   </div>
 </body>
 
