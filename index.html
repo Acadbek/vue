@@ -11,13 +11,7 @@
 
 <body>
   <div id="vue-app">
-    <div>
-      <button @click="add">add a year</button>
-      <h1>my age id {{age}}</h1>
-      <button @click="subtract">subtract a year</button>
-    </div>
-    <canvas @mousemove="updateXY" id="canvas">{{x}}, {{y}}</canvas>
-    <p>X: {{x}}, Y: {{y}}</p>
+    <input @keyup.enter="update" type="text">
   </div>
 </body>
 
